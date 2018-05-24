@@ -45,6 +45,7 @@
     RCEasyTipView *tipView = [[RCEasyTipView alloc] initWithPreferences:preferences];
     tipView.text = @"EasyTipView is an easy to use tooltip view. It can point to any UIView or UIBarItem subclasses. Tap the buttons to see other tooltips.";
     tipView.delegate = self;
+    tipView.dismissOverlayColor = [[UIColor blackColor]colorWithAlphaComponent:.5];
     [tipView showAnimated:YES forView:sender withinSuperView:nil];
 
 }

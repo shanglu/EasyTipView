@@ -471,6 +471,7 @@
             dismissOverLay.userInteractionEnabled = YES;
             [dismissOverLay addGestureRecognizer:tapGesture];
             dismissOverLay.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+            dismissOverLay.backgroundColor = self.dismissOverlayColor;
             [self.window addSubview:dismissOverLay];
             _dismissOverlay = dismissOverLay;
         }

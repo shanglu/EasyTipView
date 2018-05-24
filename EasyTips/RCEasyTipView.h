@@ -78,6 +78,11 @@ typedef NS_ENUM(NSInteger, ArrowPosition){
 @interface RCEasyTipView : UIView
 
 /**
+ Setting the dismissOverlay backgroundColor
+ */
+@property (nonatomic, strong) UIColor *dismissOverlayColor;
+
+/**
  Unique ID for Each RCEasyTipView
  */
 @property (readonly, assign) NSInteger ID;
